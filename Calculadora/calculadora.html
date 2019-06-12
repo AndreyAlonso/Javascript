@@ -11,28 +11,33 @@
   <title>Calculadora</title>
 </head>
 <body>
-  <div class="container py-3">
-    <h1>Calculadora</h1>
-    <div class="card col-5">
+  <nav class="navbar">
+    
+  </nav>
+  <div class="container py-3 bg-info col-3 text-center">
+    <h1 style="font-family: arial;" class="text-white">Calculadora</h1>
+    <div class="card">
       <form class="form" id="formulario">
-        <div class="row pt-4">
+        <div class="card-body">
+          <div class="row">
+            <input type="number" id="a" class="col-6 bg-light" min="0" value="0" >
 
-          <input type="number"  id="a" class="form-group col-3" min="0" value="0" >
-
-          <input type="number"  id="b" class="form-group col-3" min="0" value="0">
+            <input type="number" id="b" class="col-6 bg-light" min="0" value="0">
+          </div>
         </div>
-        <button value="+" class="btn btn-info" type="button"
+        <button value="+" class="btn btn-secondary" type="button"
         onclick="suma(document.getElementById('a').value,document.getElementById('b').value);">+</button>
-                <button value="+" class="btn btn-info" type="button"
+        <button value="+" class="btn btn-secondary" type="button"
         onclick="resta(document.getElementById('a').value,document.getElementById('b').value);">-</button>
-                <button value="+" class="btn btn-info" type="button"
+        <button value="+" class="btn btn-secondary" type="button"
         onclick="division(document.getElementById('a').value,document.getElementById('b').value);">/</button>
-                <button value="+" class="btn btn-info"  type="button" 
+        <button value="+" class="btn btn-secondary"  type="button" 
         onclick="producto(document.getElementById('a').value,document.getElementById('b').value);">*</button>
         <hr>
       </form>
     </div>
-    <input type="text"  id="resp" name="">
+    <br>
+    <input type="text"  id="resp" name="" class="col-12 text-center py-2 text-success font-weight-bold" >
 
 
   </div>
