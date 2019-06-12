@@ -21,7 +21,14 @@
 
           <input type="number"  id="b" class="form-group col-3" min="0" value="0">
         </div>
-        <input type="submit" value="+" class="btn btn-info">
+        <button value="+" class="btn btn-info" type="button"
+        onclick="suma(document.getElementById('a').value,document.getElementById('b').value);">+</button>
+                <button value="+" class="btn btn-info" type="button"
+        onclick="resta(document.getElementById('a').value,document.getElementById('b').value);">-</button>
+                <button value="+" class="btn btn-info" type="button"
+        onclick="division(document.getElementById('a').value,document.getElementById('b').value);">/</button>
+                <button value="+" class="btn btn-info"  type="button" 
+        onclick="producto(document.getElementById('a').value,document.getElementById('b').value);">*</button>
         <hr>
       </form>
     </div>
@@ -30,7 +37,7 @@
 
   </div>
   <script type="text/javascript" src="calcula.js" >
-    
+
   </script>
 
   <!-- Optional JavaScript -->
