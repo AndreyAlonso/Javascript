@@ -66,13 +66,13 @@ class UI
 		{
 			document.querySelector('.alert').remove();
 
-		}, 2000);
+		}, 1000);
 	}	
 
 
 }
 
-//DOM Events
+//DOM Events (Document Object Model)
 
 document.getElementById('product-form')
 .addEventListener('submit',function(e){
